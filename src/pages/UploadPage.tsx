@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import { mockApiCall } from "../api";
+import { useStore } from "../store";
 
 const UploadPage = () => {
-  const [loading, setLoading] = useState<boolean>(false);
+  // local state
+  // const [loading, setLoading] = useState<boolean>(false);
+
+  // destructuring global state
+  const { loading, setLoading } = useStore();
 
   const handleUploadClick = async () => {
     try {

@@ -6,3 +6,6 @@ npx tailwind init -p
 
 <!-- router -->
 npm i react-router-dom
+
+<!-- Global State -->
+npm install zustand
