@@ -1,14 +1,20 @@
-import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import Navbar from "./components/Navbar";
+import { Routes, Route } from "react-router";
+import HomePage from "./pages/HomePage";
+import UploadPage from "./pages/UploadPage";
 
 function App() {
   return (
     <>
-      <div className="p-4 mt-2 bg-red-400 w-full flex justify-center">
-        <p className="w-20 bg-black text-white p-2 text-center">Halo dunia</p>
-      </div>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/upload" element={<UploadPage />} />
+      </Routes>
     </>
   );
 }
