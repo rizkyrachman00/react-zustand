@@ -18,6 +18,11 @@ const Navbar = () => {
             Upload
           </li>
         </Link>
+        <Link to="/fetch">
+          <li className="cursor-pointer p-2 rounded-2xl hover:bg-white hover:text-blue-500 transition duration-500 hover:p-2 hover:rounded-2xl">
+            Fetch API
+          </li>
+        </Link>
       </ul>
 
       {loading && <p className="mr-12 text-3xl text-white">Uploading ....</p>}

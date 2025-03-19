@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import { Routes, Route } from "react-router";
 import HomePage from "./pages/HomePage";
 import UploadPage from "./pages/UploadPage";
+import FetchApiPage from "./pages/FetchApiPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/upload" element={<UploadPage />} />
+        <Route path="/fetch" element={<FetchApiPage />} />
       </Routes>
     </>
   );
